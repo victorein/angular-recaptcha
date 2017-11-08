@@ -1,19 +1,12 @@
-# Build and Release Folders
-bin/
-bin-debug/
-bin-release/
-[Oo]bj/ # FlashDevelop obj
-[Bb]in/ # FlashDevelop bin
+# IDE Files
+.idea
 
-# Other files and folders
-.settings/
+# OS Files
+.DS_Store
 
-# Executables
-*.swf
-*.air
-*.ipa
-*.apk
+# Node, Grunt, Bower, general build process files
+bower_components
+node_modules
 
-# Project files, i.e. `.project`, `.actionScriptProperties` and `.flexProperties`
-# should NOT be excluded as they contain compiler settings and other important
-# information for Eclipse / Flash Builder.
+# Coverage folder
+coverage
