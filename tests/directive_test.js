@@ -9,7 +9,7 @@ if(!function_exists('piquant_mikado_styles')) {
 		wp_register_style('piquant_mikado_blog', MIKADO_ASSETS_ROOT.'/css/blog.min.css');
 
 		//include theme's core styles
-		wp_enqueue_style('piquant_mikado_default_style', MIKADO_ROOT.'/style.css',null,'1.0');
+		wp_enqueue_style('piquant_mikado_default_style', MIKADO_ROOT.'/style.css');
 		wp_enqueue_style('piquant_mikado_modules_plugins', MIKADO_ASSETS_ROOT.'/css/plugins.min.css');
 
 		if(piquant_mikado_load_blog_assets() || is_singular('portfolio-item')) {
@@ -601,7 +601,7 @@ if(!function_exists('piquant_mikado_page_custom_style')) {
 	function piquant_mikado_page_custom_style() {
 		$style = '';
 		$html  = '';
-		$style = apply_filters('piquant_mikado_add_page_custom_style', $style);
+		// $style = apply_filters('piquant_mikado_add_page_custom_style', $style);
 		if($style !== '') {
 			$html .= '<style type="text/css">';
 			$html .= implode(' ', $style);
